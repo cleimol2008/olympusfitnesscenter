@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos">
+    <title>Registro de Socios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Web creada por Carlos -->
+
+<h1>Formulario de inscripción</h1>
+
+<form name="inscripcion" method="post" action="#">
+
+    <h2>Identificación</h2>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre">
+
+    <label>Código PIN:</label>
+    <input type="password" name="pin">
+
+    <hr>
+
+    <h2>Servicios extra</h2>
+
+    <input type="checkbox" name="toalla"> Toalla
+    <br>
+    <input type="checkbox" name="taquilla"> Taquilla
+    <br>
+    <input type="checkbox" name="sauna"> Sauna
+
+    <hr>
+
+    <h2>Tipo de cuota</h2>
+
+    <input type="radio" name="cuota" value="mensual"> Mensual
+    <br>
+    <input type="radio" name="cuota" value="trimestral"> Trimestral
+    <br>
+    <input type="radio" name="cuota" value="anual"> Anual
+
+    <hr>
+
+    <h2>Documentación</h2>
+
+    <label>Subir foto o DNI:</label>
+    <input type="file" name="archivo">
+
+    <hr>
+
+    <h2>Actividad favorita</h2>
+
+    <select name="actividad">
+        <option>Spinning</option>
+        <option>Yoga</option>
+        <option>Zumba</option>
+        <option>Musculación</option>
+    </select>
+
+    <hr>
+
+    <h2>Comentarios</h2>
+
+    <textarea name="comentarios" rows="5" cols="40"
+        placeholder="Indique lesiones o condiciones médicas"></textarea>
+
+    <hr>
+
+    <input type="submit" value="Enviar alta">
+    <input type="reset" value="Borrar datos">
+
+</form>
+
+<br>
+
+<a href="index.html">← Volver al inicio</a>
+
+</body>
+</html>
